@@ -129,6 +129,60 @@ header nav a:hover {
   color: #c4a7e7cc;
 }
 
+/* Registration section */
+
+.registration {
+  background-color: #2a2351;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #7f6ad8aa;
+  margin-top: 40px;
+  color: #e6dbf5;
+}
+
+.registration form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.registration label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.registration input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.registration input:focus {
+  outline: 2px solid #927add;
+  background-color: #3b3272;
+  color: #e6dbf5;
+}
+
+.registration button {
+  width: fit-content;
+  padding: 12px 30px;
+  background-color: #6e4db6;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.registration button:hover {
+  background-color: #927add;
+}
+
 /* Footer */
 
 footer {
