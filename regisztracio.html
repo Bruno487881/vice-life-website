@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regisztráció - Vice Life Roleplay</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="reg-page">
+  <div class="animated-logo">
+    <h1>Vice Life Roleplay</h1>
+    <div class="pink-line"></div>
+  </div>
+
+  <section class="reg-container">
+    <h2>Regisztráció</h2>
+    <p>Regisztrálj most, hogy elérd az egyedi PP, ház és autó funkciókat!</p>
+    <form onsubmit="return validateForm()">
+      <input type="text" id="username" name="username" placeholder="Felhasználónév" required>
+      <input type="email" id="email" name="email" placeholder="Email cím" required>
+      <input type="password" id="password" name="password" placeholder="Jelszó" required>
+      <button type="submit" class="btn">Regisztráció</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <script>
+    function validateForm() {
+      const username = document.getElementById('username').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+      const msg = document.getElementById('formMessage');
+
+      if (username.length < 3) {
+        msg.style.color = "#ff6e6e";
+        msg.textContent = "A felhasználónév legyen legalább 3 karakter.";
+        return false;
+      }
+      if (!email.includes('@')) {
+        msg.style.color = "#ff6e6e";
+        msg.textContent = "Adj meg egy érvényes email címet.";
+        return false;
+      }
+      if (password.length < 6) {
+        msg.style.color = "#ff6e6e";
+        msg.textContent = "A jelszó legyen legalább 6 karakter.";
+        return false;
+      }
+
+      msg.style.color = "#6eff6e";
+      msg.textContent = "Sikeres regisztráció! (Ez csak demo, nincs valódi adatküldés.)";
+      return false;
+    }
+  </script>
+</body>
+</html>

@@ -1,4 +1,5 @@
-/* Reset és alapok */
+
+/* Alap reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,7 +10,6 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #0e0c17;
   color: #c4a7e7;
-  line-height: 1.6;
 }
 
 .container {
@@ -18,8 +18,7 @@ body {
   padding: 0 20px;
 }
 
-/* Header */
-
+/* Fejléc és navigáció */
 header {
   background-color: #1f1b2e;
   padding: 20px 0;
@@ -48,8 +47,7 @@ header nav a:hover {
   color: #7f6ad8;
 }
 
-/* Hero section */
-
+/* Hero */
 .hero {
   background: linear-gradient(135deg, #4b367c, #1b133f);
   color: #e6dbf5;
@@ -87,20 +85,19 @@ header nav a:hover {
   background-color: #927add;
 }
 
-/* Products section */
-
+/* Termékek */
 .products h3 {
+  text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
   color: #b497e7;
-  text-align: center;
 }
 
 .product-list {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .product {
@@ -110,12 +107,6 @@ header nav a:hover {
   width: 30%;
   box-shadow: 0 0 10px #6e4db6aa;
   text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.product:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 20px #927add;
 }
 
 .product h4 {
@@ -129,62 +120,82 @@ header nav a:hover {
   color: #c4a7e7cc;
 }
 
-/* Registration section */
+/* Regisztrációs oldal */
+.reg-page {
+  padding: 40px 20px;
+}
 
-.registration {
-  background-color: #2a2351;
+.animated-logo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.animated-logo h1 {
+  font-size: 3rem;
+  color: #b497e7;
+  margin-bottom: 10px;
+}
+
+.pink-line {
+  width: 0%;
+  height: 4px;
+  background: linear-gradient(to right, #ff8edb, #ff6edb);
+  animation: growLine 2s ease-out forwards;
+}
+
+@keyframes growLine {
+  to {
+    width: 100%;
+  }
+}
+
+.reg-container {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #1f1b2e;
   padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px #7f6ad8aa;
-  margin-top: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #6e4db6aa;
+}
+
+.reg-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
   color: #e6dbf5;
 }
 
-.registration form {
+.reg-container p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #c4a7e7;
+}
+
+.reg-container form {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
-  margin-top: 20px;
 }
 
-.registration label {
-  margin-bottom: 5px;
-  font-weight: 600;
-}
-
-.registration input {
-  padding: 10px;
+.reg-container input {
+  padding: 12px;
   margin-bottom: 15px;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  background-color: #2a2351;
+  color: #e6dbf5;
   font-size: 1rem;
 }
 
-.registration input:focus {
+.reg-container input:focus {
   outline: 2px solid #927add;
   background-color: #3b3272;
-  color: #e6dbf5;
 }
 
-.registration button {
-  width: fit-content;
-  padding: 12px 30px;
-  background-color: #6e4db6;
-  border: none;
-  border-radius: 50px;
-  font-weight: bold;
-  font-size: 1.1rem;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.registration button:hover {
-  background-color: #927add;
+.reg-container #formMessage {
+  text-align: center;
+  margin-top: 10px;
 }
 
 /* Footer */
-
 footer {
   background-color: #1b133f;
   color: #6e4db6;
@@ -194,25 +205,13 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Responsive */
-
+/* Mobil nézet */
 @media(max-width: 768px) {
+  .product {
+    width: 100%;
+  }
+
   .product-list {
     flex-direction: column;
-    align-items: center;
-  }
-
-  .product {
-    width: 90%;
-    margin-bottom: 20px;
-  }
-
-  header nav {
-    text-align: center;
-  }
-
-  header nav a {
-    display: inline-block;
-    margin: 10px 15px;
   }
 }
