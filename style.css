@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e2f;
+  color: #d3c0ff;
+}
+
+header {
+  background-color: #3c1e5f;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #b57aff;
+}
+
+nav a {
+  color: #d3c0ff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffb3ff;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero {
+  background-color: #5a3f85;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  margin: 0 0 10px 0;
+}
+
+.info, .discord {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #3c1e5f;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #b57aff;
+}
+
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
