@@ -82,6 +82,15 @@ nav a.store-link:hover {
   background-color: #927add;
 }
 
+footer {
+  background-color: #1b133f;
+  color: #6e4db6;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
+
 .about {
   background-color: #1f1b2e;
   padding: 50px 20px;
@@ -107,13 +116,4 @@ nav a.store-link:hover {
   margin-bottom: 15px;
   text-align: center;
   color: #c4a7e7cc;
-}
-
-footer {
-  background-color: #1b133f;
-  color: #6e4db6;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 50px;
-  font-size: 0.9rem;
 }
