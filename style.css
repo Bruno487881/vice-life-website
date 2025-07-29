@@ -1,119 +1,122 @@
-
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0e0c17;
-  color: #c4a7e7;
   margin: 0;
-  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0a0a0f;
+  color: #f1f1f1;
 }
 
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
+.navbar {
+  background-color: #12121a;
+  padding: 15px 0;
+  border-bottom: 2px solid #8e44ec;
 }
 
-header {
-  background-color: #1f1b2e;
-  padding: 20px 0;
-  border-bottom: 3px solid #6e4db6;
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
-header h1 {
-  color: #b497e7;
-  font-size: 2.5rem;
+.logo {
+  color: #f478ff;
+  font-size: 1.8rem;
+  margin: 0;
 }
 
 nav a {
-  color: #c4a7e7;
+  color: #d2d2f2;
   text-decoration: none;
-  margin-right: 20px;
+  margin-left: 20px;
   font-weight: bold;
-  font-size: 1.1rem;
+  transition: color 0.3s ease;
 }
 
-nav a.store-link {
-  color: #ff8edb;
-  font-weight: bold;
-  border: 2px solid #ff8edb;
-  padding: 8px 15px;
-  border-radius: 30px;
-  transition: all 0.3s ease;
-}
-
-nav a.store-link:hover {
-  background-color: #ff8edb;
-  color: #1f1b2e;
+nav a:hover {
+  color: #f478ff;
 }
 
 .hero {
-  background: linear-gradient(135deg, #4b367c, #1b133f);
-  color: #e6dbf5;
-  padding: 80px 0;
+  background: linear-gradient(135deg, #1f1f2e, #292940);
+  padding: 80px 20px;
   text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 0 20px #7f6ad8aa;
+  box-shadow: 0 0 20px #000;
 }
 
 .hero h2 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
 }
 
 .hero p {
-  font-size: 1.3rem;
-  margin-bottom: 30px;
-}
-
-.btn {
-  background-color: #6e4db6;
-  color: #fff;
-  padding: 15px 40px;
-  border: none;
-  border-radius: 50px;
+  color: #d6c9ff;
   font-size: 1.2rem;
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-  background-color: #927add;
+.content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
 }
 
-footer {
-  background-color: #1b133f;
-  color: #6e4db6;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 50px;
-  font-size: 0.9rem;
+.card {
+  background-color: #15151f;
+  border: 1px solid #2c2c3e;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 15px #111111aa;
 }
 
-.about {
-  background-color: #1f1b2e;
-  padding: 50px 20px;
-  border-top: 3px solid #6e4db6;
-  color: #e6dbf5;
-  border-radius: 10px 10px 0 0;
-  margin-top: 60px;
-  box-shadow: 0 -5px 20px #7f6ad855;
-}
-
-.about h3,
-.discord h3 {
-  font-size: 2rem;
+.card h3 {
+  color: #f478ff;
+  border-bottom: 2px solid #8e44ec;
+  padding-bottom: 10px;
   margin-bottom: 20px;
-  text-align: center;
-  color: #b497e7;
 }
 
-.about p,
-.discord p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 15px;
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card li {
+  background: #1f1f2e;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border-left: 4px solid #f478ff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.faction {
+  background: #1c1c2a;
+  padding: 15px;
+  border: 1px solid #2f2f4a;
+  border-radius: 8px;
   text-align: center;
-  color: #c4a7e7cc;
+  box-shadow: 0 0 10px #00000055;
+}
+
+.faction strong {
+  color: #f478ff;
+  display: block;
+  margin-top: 5px;
+}
+
+.footer {
+  background-color: #12121a;
+  color: #999;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
 }

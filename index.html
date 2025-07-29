@@ -1,51 +1,70 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vice Life Roleplay - Főoldal</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vice Life Store</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Vice Life Roleplay</h1>
+  <header class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">Vice Life Store</h1>
       <nav>
-        <a href="#">Főoldal</a>
-        <a href="regisztracio.html">Regisztráció</a>
-        <a href="gyik.html">GYIK</a>
-        <a href="szabalyzat.html">Szabályzat</a>
-        <a href="https://vicelifestore.hu" target="_blank" class="store-link">STORE</a>
+        <a href="#pp">PP</a>
+        <a href="#autok">Autók</a>
+        <a href="#hazak">Házak</a>
+        <a href="#tamogatas">Támogatás</a>
+        <a href="#frakciok">Frakciók</a>
+        <a href="https://discord.gg/szervered" target="_blank" class="discord-link">Discord</a>
       </nav>
     </div>
   </header>
 
   <section class="hero">
-    <div class="container">
-      <h2>Üdvözlünk a Vice Life Roleplay-ben!</h2>
-      <p>Itt mindent megtalálsz.</p>
-      <a href="regisztracio.html" class="btn">Regisztrálj most!</a>
+    <div class="hero-content">
+      <h2>Üdvözlünk a Vice Life Store-ban</h2>
+      <p>Vásárolj PP-t, böngéssz autók és házak között vagy támogasd a szervert.</p>
     </div>
   </section>
 
-  <section class="about container">
-    <h3>Rólunk</h3>
-    <p>Szia! Ez itt a <strong>Vice Life Roleplay</strong> szervere.<br>
-    Célunk, hogy neked és barátaidnak a lehető legjobb élményt nyújtsuk a FiveM világában!</p>
-    <p>Szerverünk jelenleg <strong>folyamatos fejlesztés alatt áll (nap/hó)</strong>, hiszen mindent azért csinálunk, hogy a nyitásra egy valóban élvezetes, egyedi és élő RP-élményt kapj tőlünk.</p>
-    <p>Hamarosan <strong>megnyitjuk kapuinkat</strong>, és már alig várjuk, hogy részese légy a közösségünknek!</p>
-  </section>
+  <main class="content">
+    <section id="pp" class="card">
+      <h3>PP Vásárlás</h3>
+      <ul>
+        <li>💰 1000 PP – 2500 Ft</li>
+        <li>💰 2500 PP – 5500 Ft</li>
+        <li>💰 5000 PP – 9500 Ft</li>
+      </ul>
+    </section>
 
-  <section class="discord container">
-    <h3>Csatlakozz a Discord szerverünkre!</h3>
-    <a href="https://discord.gg/szervered" class="btn" target="_blank">Discord csatlakozás</a>
-  </section>
+    <section id="autok" class="card">
+      <h3>Egyedi Autók</h3>
+      <p>Prémium járművek, csak a Vice Life szerveren elérhetők.</p>
+    </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Vice Life Roleplay - Minden jog fenntartva</p>
-      <p>Kapcsolat: info@vicelife.hu</p>
-    </div>
+    <section id="hazak" class="card">
+      <h3>Egyedi Házak</h3>
+      <p>Luxus ingatlanok bérelhetők vagy megvásárolhatók RP célra.</p>
+    </section>
+
+    <section id="tamogatas" class="card">
+      <h3>Támogatás</h3>
+      <p>Minden támogatás segít fenntartani és fejleszteni a szervert. Köszönjük!</p>
+    </section>
+
+    <section id="frakciok" class="card grid">
+      <h3>Frakciók</h3>
+      <div class="faction">🚔 <strong>NAV</strong><br>Gazdasági bűnözés elleni fellépés</div>
+      <div class="faction">👮‍♂️ <strong>Rendőrség</strong><br>Közbiztonság és járőrözés</div>
+      <div class="faction">🔥 <strong>Katasztrófavédelem</strong><br>Tűzoltás, mentés</div>
+      <div class="faction">🚑 <strong>Mentőszolgálat</strong><br>Életmentés és sürgősségi ellátás</div>
+      <div class="faction">🛡️ <strong>TEK</strong><br>Terrorelhárító egységek</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Vice Life Store – Minden jog fenntartva</p>
   </footer>
 </body>
 </html>
